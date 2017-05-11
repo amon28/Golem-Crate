@@ -1,0 +1,19 @@
+name: GolemCrate
+main: GolemCrate\Dew\Main
+version: 1.0.0
+api: [3.0.0,2.1.0]
+author: Amon
+commands:
+ gcrate:
+  description: Opens crate!
+  permission: gcrate.command
+ gkey:
+  description: Gives key
+  permission: Gkey.command
+permissions:
+ gcrate.command:
+  default: true
+  description: Permission for opeing crate!
+ gkey.command:
+  default: op
+  description: Permission for giving key!
