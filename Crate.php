@@ -18,7 +18,7 @@ class crate extends PluginBase implements CommandExecutor{
 	      public function __construct($plugin){
 	           $this->plugin = $plugin;
 		}
-		public function onCommand(CommandSender $sender, Command $command, $label, array $args){
+		public function onCommand(CommandSender $sender, Command $command, $label, array $args):bool{
 		     $cmd = strtolower($command->getName());
 		     switch($cmd){
 		        case "gcrate":
@@ -68,5 +68,7 @@ class crate extends PluginBase implements CommandExecutor{
 				               $sender->sendMessage("§cRun this command on Game!");
 				}
 			}
+			return true;
 		}
+
 	}
